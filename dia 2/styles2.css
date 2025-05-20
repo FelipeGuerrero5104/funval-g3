@@ -1,0 +1,21 @@
+#cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:blueviolet;
+    color:aliceblue;
+}
+ul {
+    display: flex;
+    gap: 10px; ;
+    align-items: center;
+    list-style: none;
+}
+
+.lista-pelis {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
