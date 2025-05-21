@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+table {
+    border: solid 2.4px black;
+    margin-left: 30px;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+thead th{
+    border:solid 2px orange ;
+}
+
+tbody td{
+    border: solid 2px orange;
+}
+
+#formulario {
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}    
+
+.etiqueta-p{
+    display: flex;
+    gap: 90px;
+
+}
+
+.etiqueta-input{
+    display: flex;
+    gap: 10px;
+}

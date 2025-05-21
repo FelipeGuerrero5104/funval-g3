@@ -1,0 +1,75 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background-color:rebeccapurple ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario {
+  width: 350px;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: #10152a;
+  border: 1px solid #1a1f3a;
+  color: white;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.register {
+  background-color: #0f1b30;
+  color: white;
+}
+
+.login {
+  background-color: #8d3cf8;
+  color: white;
+}
+
+.links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.enlaces-abajo {
+  color: aliceblue;
+  margin-top: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
