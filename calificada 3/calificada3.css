@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color: rgb(74, 192, 74);
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.navegacion {
+    display: flex;
+    background-color: rgb(55, 53, 53);
+    padding: 10px;
+    gap: 20px;
+}
+
+.home {
+    padding: 0px 10px 0px 20px ;
+    color: white;
+
+}
+
+.about {
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+
+.contact {
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+
+
+main {
+    background-color: bisque;
+    padding: 20px;
+    min-height: 50%;
+}
+
+.foto {
+    height:200px ;
+    margin: 20px;
+    display: flex;
+    justify-content:right;
+
+}
+
+
+
+button {
+    padding: 8px;
+    color: white;
+    background-color: rgb(74, 192, 74);
+    border-radius: 5px;
+}
+
+ footer {
+    background-color:rgb(210, 208, 208);
+    padding: 20px;
+    width: 80%;            
+    margin: 10px ;     
+ 
+
+ }
+
+ .h2 {
+    display: flex;
+    padding: 10px;
+ }
+
+ .lista {
+    margin-left: 30px;
+
+ }
+
+ .derechos {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(55, 53, 53);
+    padding: 20px;
+    gap: 20px;
+ }
