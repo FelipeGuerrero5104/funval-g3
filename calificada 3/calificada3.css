@@ -53,13 +53,18 @@ main {
     background-color: bisque;
     padding: 20px;
     min-height: 50%;
+    width: 100%;
 }
 
 .foto {
-    height:200px ;
-    margin: 20px;
-    display: flex;
-    justify-content:center;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    width: 200px;
+    right: 0;   
+    top: 50%; 
 
 }
 
@@ -97,5 +102,6 @@ button {
     justify-content: center;
     background-color: rgb(55, 53, 53);
     padding: 20px;
-    gap: 20px;
+/*     gap: 20px; */
+    width: 100%;
  }
