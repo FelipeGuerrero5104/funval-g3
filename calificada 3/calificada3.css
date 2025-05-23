@@ -59,7 +59,7 @@ main {
     height:200px ;
     margin: 20px;
     display: flex;
-    justify-content:right;
+    justify-content:center;
 
 }
 
@@ -75,7 +75,7 @@ button {
  footer {
     background-color:rgb(210, 208, 208);
     padding: 20px;
-    width: 80%;            
+    width: 100%;            
     margin: 10px ;     
  
 
