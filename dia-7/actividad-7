@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica-clase</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex justify-center">
+  <main class="p-12 flex items-center">  <!-- agregar un border y un border-white a modo de guia -->
+    <div class="p-12  bg-gray-800 grid grid-rows-2 grid-cols-4 items-center  rounded-2xl" >
+       <div class="w-[200px] h-[140px] relative overflow-hidden rounded-xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
+            <img
+            src="https://media.discordapp.net/attachments/1373814467598487712/1377006115132407808/1.jpg?ex=68376461&is=683612e1&hm=e0ed2eec175817625ab31ee30a31bef23b291759bdc7f1e37a284f14ac0af5cc&=&format=webp&width=745&height=745"
+            alt="imagen-1"
+                 class="absolute inset-0 w-full h-full object-cover">
+            <p class="absolute top-0 left-2 w-full text-white font-bold ">Rock in Rio </p>
+            <p class="absolute bottom-0 left-1 w-full text-white font-bold" >27 de Octubre 2021</p>
+        </div>
+
+        <div>
+             <div class="w-[200px] h-[140px] relative overflow-hidden rounded-xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
+            <img class="rounded-2xl" src="https://media.discordapp.net/attachments/1373814467598487712/1377006115593912393/2.jpg?ex=68376461&is=683612e1&hm=d11896aa8bf22cec5f4cefde0903e48d586a7d3275d66ce4e8ce84f4e5657c47&=&format=webp&width=745&height=745" 
+            alt="imagen-2">
+            <p class="absolute top-0 left-2 w-full text-white font-bold">Falcon Masters Concert</p>
+            <p class="absolute bottom-0 left-2 w-full text-white font-bold">12 de Noviembre 2021</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="w-[200px] h-[140px] relative overflow-hidden rounded xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
+            <img class="rounded-2xl" src="https://media.discordapp.net/attachments/1373814467598487712/1377006115929325728/3.jpg?ex=68376461&is=683612e1&hm=df0f0b78280167019567ddb8af6a35bb7db8de6b3e6607b8f7a070e6ce23b35d&=&format=webp&width=745&height=745" 
+            alt="imagen-3">
+            <p class="absolute top-0 left-2 w-full text-white font-bold">Coachela</p>
+            <p class="absolute bottom-0 left-2 w-full text-white font-bold">13 de Diciembre 2021</p>
+            </div>
+        </div>
+
+
+      
+        <div class="w-[250px] h-full flex flex-col row-span-2 relative overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer bg-[url('https://media.discordapp.net/attachments/1373814467598487712/1377006117003067442/banner.jpg?ex=68376461&is=683612e1&hm=187f434227f37a0a0fd8c74c54752ad82fd01d059130ecac3307446cbea180a4')] bg-cover bg-center rounded-xl">
+            <p class="p-5 flex items-center justify-center font-bold" >Rock legends 2021 <br> <br> <br> Guns Roses <br> AC/DC <br> Motley Crue <br> The Cult <br> Poison <br> Deff Leppard</p>
+            <button class=" p-2 border m-5 bg-yellow-300 text-black hover:bg-yellow-400 active:bg-yellow-500 active:text-white rounded-2xl flex justify-center" >Comprar boletos</button>
+
+        </div>
+
+        <div>
+            <div class="w-[200px] h-[140px]  relative overflow-hidden rounded xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer ">
+            <img class="rounded-2xl" src="https://media.discordapp.net/attachments/1373814467598487712/1377006116193701950/4.jpg?ex=68376461&is=683612e1&hm=acebac3ff3b1785360ffb5b351bedc36fff853f8dd4b6b1f24dfef32efdbb837&=&format=webp&width=745&height=745" 
+            alt="imagen-5">
+            <p class="absolute top-0 left-2 w-full text-white font-bold">Us Festival</p>
+            <p class="absolute bottom-0 left-2 w-full text-white font-bold">20 de Diciembre 2021</p>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="w-[200px] h-[140px]  relative overflow-hidden rounded xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
+            <img class="rounded-2xl" src="https://media.discordapp.net/attachments/1373814467598487712/1377006116474589447/5.jpg?ex=68376461&is=683612e1&hm=7fc9e95db0a7472e56e03ed686604a13eec03e240d218cb9a03bec4214135031&=&format=webp&width=745&height=745" 
+            alt="imagen-6">
+            <p class="absolute top-0 left-2 w-full text-white font-bold">Altamont Speedway</p>
+            <p class="absolute bottom-0 left-2 w-full text-white font-bold">27 de Diciembre 2021</p>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="w-[200px] h-[140px]  relative overflow-hidden rounded xl transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer ">
+            <img class="rounded-2xl" src="https://media.discordapp.net/attachments/1373814467598487712/1377006116768321656/6.jpg?ex=68376461&is=683612e1&hm=01642df0fe92d1a197922c2e2dc1353af1c5133bd360f1d68241b7965d74dde0&=&format=webp&width=745&height=745" 
+            alt="imagen-7">
+            <p class="absolute top-0 left-2 w-full text-white font-bold">Rock in Rio Again</p>
+            <p class="absolute bottom-0 left-2 w-full text-white font-bold">1 de Enero 2022</p>
+            </div>
+
+        </div>
+
+      
+        
+
+    </div>
+  </main>
+</body>
+</html>
