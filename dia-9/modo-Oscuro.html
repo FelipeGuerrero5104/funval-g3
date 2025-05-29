@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="documento">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="dark:bg-black">
+    <button class="p-4 m-10 bg-black text-white dark:bg-white dark:text-black"
+    id ="botoncito"
+    >presioname
+    </button>
+
+
+
+
+
+
+    <script>
+        let btn = document.querySelector("#botoncito");
+        let dct = document.querySelector(".documento");
+        btn.addEventListener("click",function () {
+            dct.classList.toggle("dark");
+
+        });
+    </script>
+</body>
+</html>

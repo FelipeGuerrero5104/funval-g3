@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css" />
+</head>
+<body class="h-screen flex flex-col">
+
+
+  <header class="h-[10vh] w-full bg-gray-500 text-white flex items-center justify-center gap-5">
+    <p>texto1</p>
+    <p>texto2</p>
+    <p>texto3</p>
+    <p>texto4</p>
+    <img src="https://via.placeholder.com/40" alt="foto" class="h-10 w-10 rounded-full" />
+  </header>
+
+
+  <main class="h-[70%] w-full bg-gray-700 text-white flex items-center justify-center gap-5 px-4">
+    <div class="h-[85%] w-[45%] border border-black flex items-center justify-center">
+      <p>banner grande</p>
+    </div>
+
+    <div class="h-[85%] w-[45%] grid grid-cols-2 gap-2 border border-black p-2">
+      <div class="border border-black p-2">caja1</div>
+      <div class="border border-black p-2">caja2</div>
+      <div class="border border-black p-2">caja3</div>
+      <div class="border border-black p-2">caja4</div>
+      <div class="border border-black p-2">caja</div>
+      <div class="border border-black p-2">caja6</div>
+    </div>
+  </main>
+
+
+  <footer class="h-[60%] w-full bg-gray-600 flex flex-col text-white p-4 gap-4">
+
+  <!-- Formulario ocupa la parte superior -->
+  <form class=" bg-white text-black rounded-2xl p-4 flex flex-col gap-4 border border-white w-full max-w-md self-center">
+    <input class="border border-black p-2 rounded" type="text" name="nombre" placeholder="Nombre" required />
+    <input class="border border-black p-2 rounded" type="text" name="apellido" placeholder="Apellido" required />
+    <button class="border border-black p-2 rounded bg-gray-100 hover:bg-gray-200" type="submit">
+      Enviar
+    </button>
+  </form>
+
+  <!-- Enlaces abajo del formulario -->
+  <div class="grid grid-cols-3 gap-2 text-center">
+    <div class="border border-white">link1</div>
+    <div class="border border-white">link2</div>
+    <div class="border border-white">link3</div>
+    <div class="border border-white">link4</div>
+    <div class="border border-white">link5</div>
+    <div class="border border-white">link6</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
