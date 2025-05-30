@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="w-full h-full">
+    <header class="w-full bg-blue-600 text-white flex flex-col items-center">
+      <nav class="flex w-full justify-between p-4">
+        <button class="md:hidden">
+          <svg
+            class="w-7 h-7"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+        <ul class="hidden md:flex md:gap-3 md:items-center md:order-2">
+          <li class="md:hover:bg-white md:hover:text-blue-600 rounded-2xl p-2">Categorias</li>
+          <li class="md:hover:bg-white md:hover:text-blue-600 rounded-2xl p-2 ">Estrenos</li>
+          <li class="md:hover:bg-white md:hover:text-blue-600 rounded-2xl p-2 ">Agotados</li>
+        </ul>
+        <h1 class="text-2xl font-semibold md:order-1">la libreria de Nefi</h1>
+        <button class="md:order-3">
+          <svg
+            class="w-7 h-7 "
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+            />
+          </svg>
+        </button>
+      </nav>
+      <div class="flex items-center justify-center p-5">
+        <div class="flex border border-gray-300 rounded-2xl px-5 py-2 bg-white w-full max-w-xl">
+          <input type="text" placeholder="que estas buscando?" class="text-black w-full focus:outline-none" />
+          <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 11-14 0 7 7 0 0114 0Z" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="w-full">
+        <div class="bg-gray-400 w-full overflow-hidden p-5 flex items-center justify-between gap-4">
+          <div class="w-8 sm:w-10 md:w-12">
+            <svg class="w-full h-full text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+            </svg>
+          </div>
+
+          <img src="https://s3.amazonaws.com/rtvc-assets-misenal.tv/ms-public/styles/convertir_webp/public/2024-09/El%20principito%20y%20el%20zorro%20amistad.jpg.webp" alt="" class="object-center object-cover w-full max-w-3xl rounded-xl" />
+
+          <div class="w-8 sm:w-10 md:w-12">
+            <svg class="w-full h-full text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+        
+        <div class="flex flex-col p-5 border border-cyan-500 rounded-2xl gap-3">
+          <div class="overflow-hidden">
+            <img src="https://vader-prod.s3.amazonaws.com/1717690012-81u5IOcei1L.jpg" alt="" class="object-center object-cover w-full h-60 rounded-2xl" />
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold italic">Harry Potter</h2>
+          <p class="text-xs sm:text-sm">Libro de fantasia magia y mucho suspenso que te llevara a estar pendiente de la historia con cada pagina</p>
+          <h3 class="w-full flex justify-center bg-green-800 rounded-2xl p-2.5 text-xl sm:text-2xl text-yellow-500 cursor-pointer transition-transform duration-300 hover:scale-105">30$</h3>
+        </div>
+        
+        <div class="flex flex-col p-5 border border-cyan-500 rounded-2xl gap-3">
+          <div class="overflow-hidden">
+            <img src="https://vader-prod.s3.amazonaws.com/1717690012-81u5IOcei1L.jpg" alt="" class="object-center object-cover w-full h-60 rounded-2xl" />
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold italic">Harry Potter</h2>
+          <p class="text-xs sm:text-sm">Libro de fantasia magia y mucho suspenso que te llevara a estar pendiente de la historia con cada pagina</p>
+          <h3 class="w-full flex justify-center bg-green-800 rounded-2xl p-2.5 text-xl sm:text-2xl text-yellow-500 cursor-pointer transition-transform duration-300 hover:scale-105">30$</h3>
+        </div>
+
+
+        <div class="flex flex-col p-5 border border-cyan-500 rounded-2xl gap-3">
+          <div class="overflow-hidden">
+            <img src="https://vader-prod.s3.amazonaws.com/1717690012-81u5IOcei1L.jpg" alt="" class="object-center object-cover w-full h-60 rounded-2xl" />
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold italic">Harry Potter</h2>
+          <p class="text-xs sm:text-sm">Libro de fantasia magia y mucho suspenso que te llevara a estar pendiente de la historia con cada pagina</p>
+          <h3 class="w-full flex justify-center bg-green-800 rounded-2xl p-2.5 text-xl sm:text-2xl text-yellow-500 cursor-pointer transition-transform duration-300 hover:scale-105">30$</h3>
+        </div>
+
+        <div class="flex flex-col p-5 border border-cyan-500 rounded-2xl gap-3">
+          <div class="overflow-hidden">
+            <img src="https://vader-prod.s3.amazonaws.com/1717690012-81u5IOcei1L.jpg" alt="" class="object-center object-cover w-full h-60 rounded-2xl" />
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold italic">Harry Potter</h2>
+          <p class="text-xs sm:text-sm">Libro de fantasia magia y mucho suspenso que te llevara a estar pendiente de la historia con cada pagina</p>
+          <h3 class="w-full flex justify-center bg-green-800 rounded-2xl p-2.5 text-xl sm:text-2xl text-yellow-500 cursor-pointer transition-transform duration-300 hover:scale-105">30$</h3>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="bg-blue-600 text-white flex flex-col gap-7 justify-center p-4">
+      <div class="w-full flex justify-center">
+        <h2 class="text-xl sm:text-2xl font-semibold">Síguenos</h2>
+      </div>
+      <div class="flex w-full justify-around flex-wrap gap-4">
+        <!-- Iconos de redes sociales -->
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M3 8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8zm5-3a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V8a3 3 0 00-3-3H8z" clip-rule="evenodd" />
+        </svg>
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 00-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0112.592 6h.543z" clip-rule="evenodd" />
+        </svg>
+        <!-- Añade más iconos según sea necesario -->
+      </div>
+    </footer>
+  </body>
+</html>
+

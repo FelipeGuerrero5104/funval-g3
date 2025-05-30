@@ -8,8 +8,8 @@
 </head>
 <body class="h-screen ">
     <header class="w-full h-[8%]">
-        <div class="w-full h-[100%] bg-blue-950 text-gray-400 text-xs flex items-center justify-center gap-5">
-            <img src="" alt="logo">
+        <div class="w-full h-[100%] bg-blue-950 text-gray-400 text-xs flex items-center justify-between gap-5">
+            <img class="h-[35px] ww-[35px] transition-transform duration-300 ease-in-out hover:scale-150" src="./fotos/programa4.png" alt="logo">
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Inicio</p>
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Habilidades</p>
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Proyectos</p>
@@ -17,23 +17,51 @@
              hover:text-white cursor-pointer  active:bg-white active:text-black">Contacto</button>
         </div>
     </header>
-    <main class="w-full h-[150%] bg-blue-900 text-white flex flex-col items-center">
-        <h1 class="flex  justify-center h-20 mt-10 text-xl">Soy Felipe Guerrero 
+    <main class="w-full h-[300%] bg-gray-400 text-black flex flex-col items-center">
+        <h1 class="flex  justify-center h-20 mt-10 text-xl font-semibold italic">Soy Felipe Guerrero 
             <br>back-end developer</h1>
-        <img class="h-[300px] w-[300px]" src="./fotos/foto2.jpg" alt="foto">
-        <h2 class="mt-5 text-2xl text-yellow-400 ">¿Quien soy?</h2>
+        <img class="h-[300px] w-[300px] p-1" src="./fotos/yo4-Photoroom.png" alt="foto">
+        <h2 class="mt-1 text-2xl text-yellow-300 font-bold italic  ">¿Quien soy?</h2>
 
-        <p class="flex flex-col justify-center">
+        <p class="flex flex-col justify-center italic font-semibold">
             <br>Soy un desarrollador web especializado en 
             <br>front-end, me encanta toda el area de 
             <br>informatica y los videojuegos, mi proxima
             <br> meta es convertirme en ingeniero en
             <br> CiberSeguridad
         </p>
-        <button class="border bg-yellow-500 rounded-2xl p-2 mt-15 transition-transform duration-300 ease-in-out hover:scale-120
+        <button class=" bg-yellow-400 rounded-2xl p-2 mt-15 transition-transform duration-300 ease-in-out hover:scale-120
          active:bg-yellow-600 "> Mis Proyectos</button>
+         <h2 class="mt-10 font-semibold text-yellow-300 text-3xl italic">Habilidades</h2>
+
+         <div class="border rounded-2xl mt-8 bg-blue-950 grid grid-cols-2 p-5 gap-2">
+            <div class=" h-[90%] mt-3  grid grid-cols-3 p-1 gap-5">
+                <img class="" src="./fotos/html2.png" alt="fotohtml">
+                <img  src="./fotos/css3.png" alt="fotocss">
+                <img  src="./fotos/javascript2.webp" alt="fotojava">
+                <img  src="./fotos/logo_python.png" alt="fotopython">
+                <img  src="./fotos/cnna2.png" alt="logo cnna">
+                <img  src="./fotos/Tailwind_CSS_Logo.svg.png" alt="fototailwind">
+                
+            </div>
+
+            <div class="h-[90%] mt-3  text-yellow-300  rounded-2xl flex items-center justify-center">
+                <p class="text-center font-bold italic">
+                    1<br>
+                    Año de experiencia
+                </p>
+            </div>
+
+        
+         </div>
+
+
+
+
+
+
     </main>
-    <footer class="w-full h-[22%] bg-blue-900 ">este es mi footer</footer>
+    <footer class="w-full h-[50%] bg-blue-900 ">este es mi footer</footer>
 
 </body>
 </html>
