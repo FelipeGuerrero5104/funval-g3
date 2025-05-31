@@ -408,11 +408,29 @@
   .h-\[140px\] {
     height: 140px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[280\%\] {
+    height: 280%;
+  }
   .h-\[300\%\] {
     height: 300%;
   }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[370px\] {
+    height: 370px;
+  }
+  .h-\[380px\] {
+    height: 380px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-full {
     height: 100%;
