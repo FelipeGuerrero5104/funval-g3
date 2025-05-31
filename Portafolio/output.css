@@ -387,8 +387,14 @@
   .h-\[60\%\] {
     height: 60%;
   }
+  .h-\[65\%\] {
+    height: 65%;
+  }
   .h-\[70\%\] {
     height: 70%;
+  }
+  .h-\[75\%\] {
+    height: 75%;
   }
   .h-\[80\%\] {
     height: 80%;
@@ -1167,6 +1173,31 @@
       }
     }
   }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mt-1 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:mt-2 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:mt-3 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:mt-10 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -1177,9 +1208,30 @@
       display: grid;
     }
   }
+  .lg\:size-52 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 52);
+      height: calc(var(--spacing) * 52);
+    }
+  }
+  .lg\:h-\[30\%\] {
+    @media (width >= 64rem) {
+      height: 30%;
+    }
+  }
+  .lg\:h-\[50\%\] {
+    @media (width >= 64rem) {
+      height: 50%;
+    }
+  }
   .lg\:h-\[100\%\] {
     @media (width >= 64rem) {
       height: 100%;
+    }
+  }
+  .lg\:h-\[150\%\] {
+    @media (width >= 64rem) {
+      height: 150%;
     }
   }
   .lg\:h-\[170\%\] {
