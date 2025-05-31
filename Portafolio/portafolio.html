@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio F.G</title>
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="h-screen ">
     <header class="w-full h-[8%]">
-        <div class="w-full h-[100%] bg-blue-950 text-gray-400 text-xs flex items-center justify-between gap-5">
-            <img class="h-[35px] ww-[35px] transition-transform duration-300 ease-in-out hover:scale-150" src="./fotos/programa4.png" alt="logo">
+        <div class="w-full h-[100%] bg-blue-950 text-gray-400 text-xs flex items-center gap-5 md:flex-row md:gap-20 ">
+            <img class="h-[35px] w-[35px] transition-transform duration-300 ease-in-out hover:scale-150" src="./fotos/programa4.png" alt="logo">
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Inicio</p>
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Habilidades</p>
             <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Proyectos</p>
             <button class="border border-white rounded-2xl p-1.5  bg-blue-950 transition-transform duration-300 ease-in-out hover:scale-150
-             hover:text-white cursor-pointer  active:bg-white active:text-black">Contacto</button>
+             hover:text-white cursor-pointer  active:bg-white active:text-black">Mi CV</button>
         </div>
     </header>
-    <main class="w-full h-[300%] bg-gray-400 text-black flex flex-col items-center">
+    <main class="w-full h-[300%] lg:h-[220%] bg-gray-400 text-black flex flex-col items-center">
         <h1 class="flex  justify-center h-20 mt-10 text-xl font-semibold italic">Soy Felipe Guerrero 
             <br>back-end developer</h1>
-        <img class="h-[300px] w-[300px] p-1" src="./fotos/yo4-Photoroom.png" alt="foto">
+        
+        <div class="flex ">
+            <img class="h-[300px] w-[300px] p-1" src="./fotos/yo4-Photoroom.png" alt="foto">
+            <img class="h-[300px] w-[300px] rounded-2xl hidden md:block " src="./fotos/matri.jpg" alt="Foto de un matrimonio">
+        </div>
+        
+
         <h2 class="mt-1 text-2xl text-yellow-300 font-bold italic  ">¿Quien soy?</h2>
 
         <p class="flex flex-col justify-center italic font-semibold">
@@ -30,38 +36,103 @@
             <br> meta es convertirme en ingeniero en
             <br> CiberSeguridad
         </p>
-        <button class=" bg-yellow-400 rounded-2xl p-2 mt-15 transition-transform duration-300 ease-in-out hover:scale-120
-         active:bg-yellow-600 "> Mis Proyectos</button>
-         <h2 class="mt-10 font-semibold text-yellow-300 text-3xl italic">Habilidades</h2>
+        <button class=" bg-yellow-400 rounded-2xl p-2 mt-15 italic font-semibold transition-transform duration-300 ease-in-out hover:scale-120
+         hover:bg-yellow-500 active:bg-yellow-600 "> Mis Proyectos</button>
 
-         <div class="border rounded-2xl mt-8 bg-blue-950 grid grid-cols-2 p-5 gap-2">
-            <div class=" h-[90%] mt-3  grid grid-cols-3 p-1 gap-5">
-                <img class="" src="./fotos/html2.png" alt="fotohtml">
-                <img  src="./fotos/css3.png" alt="fotocss">
-                <img  src="./fotos/javascript2.webp" alt="fotojava">
-                <img  src="./fotos/logo_python.png" alt="fotopython">
-                <img  src="./fotos/cnna2.png" alt="logo cnna">
-                <img  src="./fotos/Tailwind_CSS_Logo.svg.png" alt="fototailwind">
-                
+         <div class="w-full lg:grid lg:grid-cols-2">
+            <div class="lg:w-[100%]">
+                <h2 class="mt-10 font-semibold text-yellow-300 text-3xl italic flex justify-center">Habilidades</h2>
+
+                <div class="border rounded-2xl mt-8 bg-blue-950 grid grid-cols-2 p-5 gap-2">
+                    <div class=" h-[90%] mt-3  grid grid-cols-3 p-1 gap-5">
+                        <img class="" src="./fotos/html2.png" alt="fotohtml">
+                        <img  src="./fotos/css3.png" alt="fotocss">
+                        <img  src="./fotos/javascript2.webp" alt="fotojava">
+                        <img  src="./fotos/logo_python.png" alt="fotopython">
+                        <img  src="./fotos/cnna2.png" alt="logo cnna">
+                        <img  src="./fotos/Tailwind_CSS_Logo.svg.png" alt="fototailwind">
+                    </div>
+
+                    <div class="h-[90%] mt-3  text-yellow-300  rounded-2xl grid">
+                        <p class="text-center font-bold italic text-2xl">
+                        1<br>
+                        Año de Experiencia 
+                        </p>
+
+                        <p class="hidden md:block text-center font-bold italic">
+                        °Experiencia en Logistica <br>
+                        °Conocimiento Basico en redes <br>
+                        CCNA 1 <br>
+                        3 Meses en Funval
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="h-[90%] mt-3  text-yellow-300  rounded-2xl flex items-center justify-center">
-                <p class="text-center font-bold italic">
-                    1<br>
-                    Año de experiencia
-                </p>
+            <div class="w-full lg:w-[100%] bg-blue-950 p-8 mt-10 flex flex-col items-center justify-between rounded-2xl text-yellow-300 italic">
+
+            <div class="mb-6 md:mb-0 md:w-1/2">
+
+                <h2 class="text-3xl  font-bold mb-6 italic">
+                    Proyectos Importantes
+                </h2>
+
             </div>
 
-        
-         </div>
+
+            <div class="flex space-x-4 md:w-1/2">
 
 
+                <div class="relative w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
+                    <img src="./fotos/proyecto1.png" alt="Project 1" class="w-full h-full object-cover" />
+                    <div class="absolute bottom-2 left-2 text-sm font-semibold"></div>
+                 </div>
 
 
+                <div class="w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
+                     <img src="./fotos/proyecto2.png" alt="Project 2" class="w-full h-full object-cover opacity-70" />
+                </div>
+
+
+                 <div class="w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
+                    <img src="./fotos/proyecto3.png" alt="Project 3" class="w-full h-full object-cover opacity-70" />
+                </div>
+            </div>
+            
+            <button class="bg-yellow-400 text-black px-6 py-3 mt-5 rounded-full font-semibold hover:bg-yellow-500
+                            transition-transform duration-300 ease-in-out hover:scale-120 active:bg-yellow-600">
+                    Ver Proyectos
+            </button>
+
+        </div>
+        </div>
 
 
     </main>
-    <footer class="w-full h-[50%] bg-blue-900 ">este es mi footer</footer>
+
+    <footer class="w-full h-[80%] bg-gray-400 ">
+        <div class="h-[90%] flex items-center justify-center px-4">
+            <div class=" bg-white p-8 rounded-2xl shadow-xl w-full h-full max-w-md">
+                <h2 class="text-2xl font-bold text-center text-black mb-6 ">Contratame!</h2>
+    
+                 <form class=" flex flex-col gap-5 p-">
+                    <input type="text" placeholder="Nombre y Apellido" class="w-full border border-black p-4 rounded-2xl bg-gray-200 " />
+      
+                    <input type="email" placeholder="Correo Electronico" class="w-full border border-black p-4 rounded-2xl bg-gray-200 " />
+      
+                    <input placeholder="Mandame un mensaje!" rows="4" class="w-full border border-black p-4 rounded-2xl bg-gray-200  resize-none"></input>
+      
+                    <button type="submit" class="w-full p-2 bg-yellow-400 rounded-full text-black font-semibold hover:bg-yellow-500 active:bg-yellow-600">
+                    Contratar :D
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>
+
+
+
