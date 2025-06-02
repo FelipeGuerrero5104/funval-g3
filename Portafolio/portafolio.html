@@ -1,138 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio F.G</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body class="h-screen ">
-    <header class="w-full h-[8%]">
-        <div class="w-full h-[100%] bg-blue-950 text-gray-400 text-xs flex items-center gap-5 md:flex-row md:gap-20 ">
-            <img class="h-[35px] w-[35px] transition-transform duration-300 ease-in-out hover:scale-150" src="./fotos/programa4.png" alt="logo">
-            <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Inicio</p>
-            <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Habilidades</p>
-            <p class="transition-transform duration-300 ease-in-out hover:scale-150 hover:text-white cursor-pointer">Proyectos</p>
-            <button class="border border-white rounded-2xl p-1.5  bg-blue-950 transition-transform duration-300 ease-in-out hover:scale-150
-             hover:text-white cursor-pointer  active:bg-white active:text-black">Mi CV</button>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="w-full h-full">
+    <header
+      class="w-full bg-blue-600 text-white flex flex-col items-center dark:bg-slate-800"
+    >
+      <nav class="flex w-full justify-between items-center p-4">
+        <button class="md:hidden">
+          <svg
+            class="w-7 h-7"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+        <ul class="hidden md:flex md:order-2 md:gap-5">
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            Inicio
+          </li>
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            Habilidades
+          </li>
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            Proyectos
+          </li>
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            Contacto
+          </li>
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            CV
+          </li>
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+            GitHub
+          </li>
+        </ul>
+        <h1 class="text-2xl font-semibold md:order-1 dark:hidden">
+         Diseñador Web Front-End
+        </h1>
+        <h1 class="hidden text-2xl font-semibold md:order-1 dark:block">
+          Ingeniero en Ciber-seguridad
+        </h1>
+        <div id="botoncito" class="cursor-pointer">
+
+           <!--  modo claro -->
+            <img 
+            src="./fotos/programa5.png" 
+            alt=""
+            class="w-[50px] h-[50px] cursor-pointer transition-transform duration-300 hover:scale-150 dark:hidden"
+            >
+
+            <!-- modo oscuro -->
+           <img 
+           src="./fotos/programa4.png" 
+           alt=""
+           class="w-[50px] h-[50px] cursor-pointer transition-transform duration-300 hover:scale-150 hidden dark:block"
+           >
+           
         </div>
+      </nav>
+      <div class="flex items-center justify-center p-5 md:hidden">
+      </div>
     </header>
-    <main class="w-full h-[280%] lg:h-[170%] bg-gray-400 text-black flex flex-col items-center">
-        <h1 class="flex  justify-center h-20 mt-10 text-xl font-semibold italic">Soy Felipe Guerrero 
-            <br>back-end developer</h1>
-        
-        <div class="flex ">
-            <img class="h-[300px] w-[300px] p-1" src="./fotos/yo4-Photoroom.png" alt="foto">
-            <img class="h-[300px] w-[300px] rounded-2xl hidden md:block " src="./fotos/matri.jpg" alt="Foto de un matrimonio">
+    <main class="flex flex-col md:flex-row dark:bg-slate-600">
+      <div
+        class="contenedor-banner w-full flex flex-col gap-10 md:order-2 md:w-[45%] md:p-4 dark:text-white"
+      >
+        <div
+          class="bg-gray-400 w-full overflow-hidden p-5 flex items-center justify-between md:h-[35%] md:bg-transparent"
+        >
+          <div class="w-[10%]">
+            <svg
+              class="size-full text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m15 19-7-7 7-7"
+              />
+            </svg>
+          </div>
+
+          <img
+            src="./fotos/mio xd.png"
+            alt=""
+            class="object-center object-cover w-[80%] rounded-2xl md:size-56 md:rounded-2xl dark:hidden"
+          />
+          <img
+            src="./fotos/matri.jpg"
+            alt=""
+            class="object-center object-cover rounded-2xl hidden w-[80%] size-52 md:size-56 md:rounded-2xl dark:block"
+          />
+          <div class="w-[10%]">
+            <svg
+              class="size-full text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m9 5 7 7-7 7"
+              />
+            </svg>
+          </div>
         </div>
-        
-
-        <h2 class="mt-1 text-2xl text-yellow-300 font-bold italic  ">¿Quien soy?</h2>
-
-        <p class="flex flex-col justify-center italic font-semibold">
-            <br>Soy un desarrollador web especializado en 
-            <br>front-end, me encanta toda el area de 
-            <br>informatica y los videojuegos, mi proxima
-            <br> meta es convertirme en ingeniero en
-            <br> CiberSeguridad
-        </p>
-        <button class=" bg-yellow-400 rounded-2xl p-2 mt-15 italic font-semibold transition-transform duration-300 ease-in-out hover:scale-120
-         hover:bg-yellow-500 active:bg-yellow-600 ">Mi GitHub</button>
-
-         <div class="w-full lg:grid lg:grid-cols-2">
-            <div class="lg:w-[100%]">
-                <h2 class="mt-10 font-semibold text-yellow-300 text-3xl italic flex justify-center">Habilidades</h2>
-
-                <div class="border rounded-2xl mt-8 bg-blue-950 grid grid-cols-2 p-5 gap-2">
-                    <div class=" h-[90%] mt-3  grid grid-cols-3 p-1 gap-5">
-                        <img class="" src="./fotos/html2.png" alt="fotohtml">
-                        <img  src="./fotos/css3.png" alt="fotocss">
-                        <img  src="./fotos/javascript2.webp" alt="fotojava">
-                        <img  src="./fotos/logo_python.png" alt="fotopython">
-                        <img  src="./fotos/cnna2.png" alt="logo cnna">
-                        <img  src="./fotos/Tailwind_CSS_Logo.svg.png" alt="fototailwind">
-                    </div>
-
-                    <div class="h-[90%] mt-3  text-yellow-300  rounded-2xl grid">
-                        <p class="text-center font-bold italic text-2xl">
-                        1<br>
-                        Año de Experiencia 
-                        </p>
-
-                        <p class="hidden md:block text-center font-bold italic">
-                        °Experiencia en Logistica <br>
-                        °Conocimiento Basico en redes <br>
-                        CCNA 1 <br>
-                        3 Meses en Funval
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full lg:w-[100%] bg-blue-950 p-8 mt-10 flex flex-col items-center justify-between rounded-2xl text-yellow-300 italic">
-
-            <div class="mb-6 md:mb-0 md:w-1/2">
-
-                <h2 class="text-3xl  font-bold mb-6 italic">
-                    Proyectos Importantes
-                </h2>
-
-            </div>
-
-
-            <div class="flex space-x-4 md:w-1/2">
-
-
-                <div class="relative w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
-                    <img src="./fotos/proyecto1.png" alt="Project 1" class="w-full h-full object-cover" />
-                    <div class="absolute bottom-2 left-2 text-sm font-semibold"></div>
-                 </div>
-
-
-                <div class="w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
-                     <img src="./fotos/proyecto2.png" alt="Project 2" class="w-full h-full object-cover opacity-70" />
-                </div>
-
-
-                 <div class="w-20 h-48 transition-transform duration-300 ease-in-out hover:scale-120 rounded-xl overflow-hidden">
-                    <img src="./fotos/proyecto3.png" alt="Project 3" class="w-full h-full object-cover opacity-70" />
-                </div>
-            </div>
-            
-            <button class="bg-yellow-400 text-black px-6 py-3 mt-5 rounded-full font-semibold hover:bg-yellow-500
-                            transition-transform duration-300 ease-in-out hover:scale-120 active:bg-yellow-600">
-                    Ver Proyectos
-            </button>
-
-        </div>
+        <div class="contenido-banner hidden md:block md:bg-blue-600 md:text-white md:italic md:rounded-2xl md:p-2 dark:bg-gray-800">
+          <p>
+            Mi nombre es Felipe Guerrero 
+            soy un diseñador web con metas de convertirse en ingeniero en CiberSeguridad
+             tengo 23 años, me gusta el Futbol, los videojuegos y el anime. Soy amante del sushi y los completos.
+          </p>
         </div>
 
+        <div class="formulario-contenedor hidden md:block md:rounded-2xl md:p-10 md:bg-blue-600 dark:bg-gray-800">
+            <h2 class="md:flex md:justify-center md:text-white md:mb-5 md:font-bold md:text-lg">Contratame :D</h2>
+            <form class="md:rounded-2xl md:p-3 md:bg-white  dark:bg-slate-600" action="/enviar" method="post">
+                <input class="dark:text-white" type="text" value="Nombre:" readonly disabled><br>
+                <input class="md:border md:border-blue-600 md:rounded-2xl md:w-full md:p-2 dark:text-white dark:border-white" type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido"><br><br>
 
+                <input class="dark:text-white"  type="text" value="Correo electrónico:" readonly disabled><br>
+                <input class="md:border md:border-blue-600 md:rounded-2xl md:w-full md:p-2 dark:text-white dark:border-white " type="email" id="email" name="email" required placeholder="Correo Electronico"><br><br>
+
+                <input class="dark:text-white"  type="text" value="Mensaje:" readonly disabled><br>
+                <textarea class="md:border md:border-blue-600 md:rounded-2xl md:w-full md:p-2 dark:text-white dark:border-white " id="mensaje" name="mensaje" rows="5" required placeholder="Dejame un mensaje"></textarea><br><br>
+
+                <button class="md:border md:border-blue-600 cursor-pointer transition-transform duration-300 hover:scale-120 md:rounded-2xl md:p-2 active:bg-blue-700 active:text-white dark:text-white dark:border-white dark:active:bg-gray-900"  type="submit">Enviar</button>
+            </form>
+        </div>
+
+      </div>
+      <div
+        class="contenedor-card grid p-4 gap-4 md:order-1 md:w-[55%] dark:text-white"
+      >
+        <!-- caja 1 -->
+        <div
+          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[300px] md:border-4 dark:border-slate-800" >
+          
+          <div class="contenedor-imagen grid grid-cols-2 md:grid-cols-4 overflow-hidden h-full">
+            <img
+              src="./fotos/html2.png"
+              alt=""
+              class="object-center object-cover w-[100px] h-[100px]  rounded-2xl "
+            />
+            <img
+              src="./fotos/css3.png"
+              alt=""
+              class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
+            />
+            <img 
+            src="./fotos/cnna2.png" 
+            alt=""
+            class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
+            >
+            <img 
+            src="./fotos/logo_python.png" 
+            alt=""
+            class="object-center object-cover w-[80px] h-[80px] rounded-2xl"
+            >
+            <img 
+            src="./fotos/javascript2.webp" 
+            alt=""
+            class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
+            >
+
+          </div>
+          <h2 class="text-3xl font-semibold italic flex justify-center bg-blue-600 text-white rounded-2xl p-2.5 dark:bg-slate-800">1 Año De Experiencia</h2>
+
+        </div>
+        <!-- card 2 -->
+        <div
+          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[380px] md:border-4 dark:border-slate-800"
+        >
+          <h2 class="text-3xl font-bold italic flex justify-center">Proyectos Relevantes</h2>
+          <div class="contenedor-imagen overflow-hidden h-full grid grid-cols-3">
+            <img
+              src="./fotos/proyecto1.png"
+              alt=""
+              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
+               cursor-pointer transition-transform duration-300 hover:scale-120"
+            />
+            <img
+              src="./fotos/proyecto2.png"
+              alt=""
+              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
+               cursor-pointer transition-transform duration-300 hover:scale-120"
+            />
+            <img
+              src="./fotos/proyecto3.png"
+              alt=""
+              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
+               cursor-pointer transition-transform duration-300 hover:scale-120"
+            />
+          </div>
+          <button
+            class="w-full flex justify-center bg-blue-600 rounded-2xl p-2.5 text-2xl text-white font-semibold italic 
+            cursor-pointer transition-transform duration-300 hover:scale-103 dark:bg-slate-800 active:bg-blue-700 dark:active:bg-slate-900"
+          >
+            Ver Proyectos
+          </button>
+        </div>
+      </div>
     </main>
-
-    <footer class="w-full h-[65%] lg:mt-0 bg-gray-400">
-        <div class="h-[75%] flex items-center justify-center px-4">
-            <div class=" bg-white p-8 rounded-2xl shadow-xl w-full h-[380px] max-w-md">
-                <h2 class="text-2xl font-bold text-center text-black mb-6 ">Contratame!</h2>
-    
-                 <form class=" flex flex-col gap-5 ">
-                    <input type="text" placeholder="Nombre y Apellido" class="w-full border border-black p-4 rounded-2xl bg-gray-200 " />
-      
-                    <input type="email" placeholder="Correo Electronico" class="w-full border border-black p-4 rounded-2xl bg-gray-200 " />
-      
-                    <input placeholder="Mandame un mensaje!" rows="4" class="w-full border border-black p-4 rounded-2xl bg-gray-200  resize-none"></input>
-      
-                    <button type="submit" class="w-full p-2 bg-yellow-400 rounded-full text-black font-semibold hover:bg-yellow-500 active:bg-yellow-600">
-                    Contratar :D
-                    </button>
-                </form>
-            </div>
-        </div>
-
+    <footer
+      class="bg-blue-600 text-white flex flex-col gap-7 justify-center p-4 md:flex-row md:justify-between md:items-center md:h-[15%] dark:bg-slate-800"
+    >
+      <div class="w-full flex justify-center">
+        <h2 class="text-2xl font-semibold">Mis redes!</h2>
+      </div>
+      <div class="flex w-full items-center justify-between px-6">
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
     </footer>
-
-</body>
+    <script>
+      const btn = document.getElementById("botoncito");
+      btn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
-
 
 
