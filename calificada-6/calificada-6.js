@@ -47,7 +47,7 @@ while (!salir) {
   } else if (opcionMenu === "3") {
     consultarSaldo();
   } else if (opcionMenu === "4") {
-    alert("Gracias por usar el sistema bancario. ¡Hasta luego!");
+    alert("Gracias por usar este cajero que esta medio meh :D");
     salir = true;
   } else {
     alert("Hay 4 opciones y no puedes colocar ninguna? >:v");
