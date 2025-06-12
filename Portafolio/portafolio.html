@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
     <title>Document</title>
   </head>
   <body class="w-full h-full">
     <header
-      class="w-full bg-blue-600 text-white flex flex-col items-center dark:bg-slate-800"
+      class="fixed top-0 z-50 w-full h-[90px] bg-blue-600 text-white flex flex-col items-center dark:bg-slate-800"
     >
       <nav class="flex w-full justify-between items-center p-4">
-        <button class="md:hidden">
+        <button class="md:hidden p-2">
           <svg
             class="w-7 h-7"
             aria-hidden="true"
@@ -29,6 +30,7 @@
             />
           </svg>
         </button>
+
         <ul class="hidden md:flex md:order-2 md:gap-5">
           <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
             Inicio
@@ -45,15 +47,15 @@
           <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
             CV
           </li>
-          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
+          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-130">
             GitHub
           </li>
         </ul>
         <h1 class="text-2xl font-semibold md:order-1 dark:hidden">
-         Diseñador Web Front-End
+         Desarrolador Front-End
         </h1>
         <h1 class="hidden text-2xl font-semibold md:order-1 dark:block">
-          Ingeniero en Ciber-seguridad
+          Ing. Ciber-seguridad
         </h1>
         <div id="botoncito" class="cursor-pointer">
 
@@ -76,7 +78,17 @@
       <div class="flex items-center justify-center p-5 md:hidden">
       </div>
     </header>
-    <main class="flex flex-col md:flex-row dark:bg-slate-600">
+    <main class="min-h-auto mt-[90px] flex flex-col md:flex-row dark:bg-slate-600">
+      <div class="flex items-center justify-center bg-blue-900 w-full md:hidden">
+        <ul id="navPequeña" class="hidden grid-cols-1 items-center gap-10 md:hidden text-white font-semibold">
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Inicio</li>
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Habilidades</li>
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Proyectos</li>
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Contacto</li>
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">CV</li>
+          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">GitHub</li>
+        </ul>
+      </div>
       <div
         class="contenedor-banner w-full flex flex-col gap-10 md:order-2 md:w-[45%] md:p-4 dark:text-white"
       >
@@ -139,7 +151,7 @@
 
         <div class="formulario-contenedor hidden md:block md:rounded-2xl md:p-10 md:bg-blue-600 dark:bg-gray-800">
             <h2 class="md:flex md:justify-center md:text-white md:mb-5 md:font-bold md:text-lg">Contratame :D</h2>
-            <form class="md:rounded-2xl md:p-3 md:bg-white  dark:bg-slate-600" action="/enviar" method="post">
+            <form class="md:rounded-2xl md:p-3 md:bg-white  dark:bg-slate-600" action="https://formspree.io/f/xovwddvz" method="post">
                 <input class="dark:text-white" type="text" value="Nombre:" readonly disabled><br>
                 <input class="md:border md:border-blue-600 md:rounded-2xl md:w-full md:p-2 dark:text-white dark:border-white" type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido"><br><br>
 
@@ -161,7 +173,7 @@
         <div
           class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[300px] md:border-4 dark:border-slate-800" >
           
-          <div class="contenedor-imagen grid grid-cols-2 md:grid-cols-4 overflow-hidden h-full">
+          <div class="contenedor-imagen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 overflow-hidden h-full">
             <img
               src="./fotos/html2.png"
               alt=""
@@ -197,7 +209,7 @@
           class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[380px] md:border-4 dark:border-slate-800"
         >
           <h2 class="text-3xl font-bold italic flex justify-center">Proyectos Relevantes</h2>
-          <div class="contenedor-imagen overflow-hidden h-full grid grid-cols-3">
+          <div class="contenedor-imagen overflow-hidden h-full grid grid-cols-3 p-5">
             <img
               src="./fotos/proyecto1.png"
               alt=""
@@ -207,7 +219,7 @@
             <img
               src="./fotos/proyecto2.png"
               alt=""
-              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
+              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px]
                cursor-pointer transition-transform duration-300 hover:scale-120"
             />
             <img
@@ -309,12 +321,6 @@
         </svg>
       </div>
     </footer>
-    <script>
-      const btn = document.getElementById("botoncito");
-      btn.addEventListener("click", () => {
-        document.documentElement.classList.toggle("dark");
-      });
-    </script>
   </body>
 </html>
 
