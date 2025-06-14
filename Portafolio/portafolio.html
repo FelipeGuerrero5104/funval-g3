@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <script src="./main.js" defer></script>
+    <script src="./portafolio.js" defer type="module"></script>
     <title>Document</title>
   </head>
   <body class="w-full h-full">
@@ -47,9 +47,6 @@
           <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-150">
             CV
           </li>
-          <li class=" p-2 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-130">
-            GitHub
-          </li>
         </ul>
         <h1 class="text-2xl font-semibold md:order-1 dark:hidden">
          Desarrolador Front-End
@@ -79,14 +76,14 @@
       </div>
     </header>
     <main class="min-h-auto mt-[90px] flex flex-col md:flex-row dark:bg-slate-600">
-      <div class="flex items-center justify-center bg-blue-900 w-full md:hidden">
-        <ul id="navPequeña" class="hidden grid-cols-1 items-center gap-10 md:hidden text-white font-semibold">
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Inicio</li>
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Habilidades</li>
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Proyectos</li>
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">Contacto</li>
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">CV</li>
-          <li class="p-2  rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300">GitHub</li>
+      <div class="flex items-center justify-center bg-blue-900 w-full md:hidden dark:bg-slate-600 ">
+        <ul id="navPequeña" class="hidden top-0 left-0 w-full flex flex-col items-center justify-center p-4 gap-5 md:hidden text-white font-semibold z-[999] ">
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600">Inicio</li>
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600">Habilidades</li>
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600">Proyectos</li>
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600">Contacto</li>
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600">CV</li>
+          <li class="p-2 m-1 rounded-2xl cursor-pointer hover:scale-120 transition-transform duration-300 active:bg-blue-600 ">GitHub</li>
         </ul>
       </div>
       <div
@@ -167,74 +164,54 @@
 
       </div>
       <div
-        class="contenedor-card grid p-4 gap-4 md:order-1 md:w-[55%] dark:text-white"
-      >
+        class="contenedor-card grid p-4 gap-4 md:order-1 md:w-[55%] dark:text-white">
         <!-- caja 1 -->
         <div
-          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[300px] md:border-4 dark:border-slate-800" >
-          
-          <div class="contenedor-imagen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 overflow-hidden h-full">
-            <img
-              src="./fotos/html2.png"
-              alt=""
-              class="object-center object-cover w-[100px] h-[100px]  rounded-2xl "
-            />
-            <img
-              src="./fotos/css3.png"
-              alt=""
-              class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
-            />
-            <img 
-            src="./fotos/cnna2.png" 
-            alt=""
-            class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
-            >
-            <img 
-            src="./fotos/logo_python.png" 
-            alt=""
-            class="object-center object-cover w-[80px] h-[80px] rounded-2xl"
-            >
-            <img 
-            src="./fotos/javascript2.webp" 
-            alt=""
-            class="object-center object-cover w-[100px] h-[100px] rounded-2xl"
-            >
+          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[300px] md:border-4 dark:border-slate-800"
+        >
+          <div
+            id="contenedorImagenes"
+            class="contenedor-imagen p-3 grid grid-cols-3 sm:grid-cols-4  lg:grid-cols-5 gap-4 overflow-hidden h-full"
+          ></div>
 
+          <h2
+            class="text-3xl font-semibold italic flex justify-center bg-blue-600 text-white rounded-2xl p-2.5 dark:bg-slate-800"
+          >
+            1 Año De Experiencia
+          </h2>
+        </div>
+
+        <!-- Modal -->
+        <div
+          id="modal"
+          class="hidden fixed inset-0 bg-black/50  flex items-center justify-center z-50"
+        >
+          <div class="bg-white dark:bg-slate-900  p-6 rounded-lg w-80 text-center shadow-lg">
+            <img
+              id="modalImagen"
+              src=""
+              alt="Tecnología"
+              class="w-32 h-32 mx-auto rounded-2xl object-contain mb-4"
+            />
+            <h2 id="modalTitulo" class="text-xl font-bold text-blue-600 dark:text-white"></h2>
+            <p id="modalDescripcion" class="mt-2 text-gray-700 text-2xl dark:text-gray-300  font-semibold"></p>
+            <button
+              id="botonCerrarModal"
+              class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+              Cerrar
+            </button>
           </div>
-          <h2 class="text-3xl font-semibold italic flex justify-center bg-blue-600 text-white rounded-2xl p-2.5 dark:bg-slate-800">1 Año De Experiencia</h2>
-
         </div>
         <!-- caja 2-->
         <div
-          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[380px] md:border-4 dark:border-slate-800"
+          class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[380px] md:border-4 dark:border-slate-800 text-white"
         >
-          <h2 class="text-3xl font-bold italic flex justify-center">Proyectos Relevantes</h2>
-          <div class="contenedor-imagen overflow-hidden h-full grid grid-cols-3 p-5">
-            <img
-              src="./fotos/proyecto1.png"
-              alt=""
-              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
-               cursor-pointer transition-transform duration-300 hover:scale-120"
-            />
-            <img
-              src="./fotos/proyecto2.png"
-              alt=""
-              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px]
-               cursor-pointer transition-transform duration-300 hover:scale-120"
-            />
-            <img
-              src="./fotos/proyecto3.png"
-              alt=""
-              class="object-center object-cover w-[70px] h-[100px] rounded-2xl md:w-[100px] md:h-[150px] 
-               cursor-pointer transition-transform duration-300 hover:scale-120"
-            />
+          <h2 class="text-3xl font-semibold italic flex justify-center bg-blue-600 rounded-2xl p-1 dark:bg-gray-800">Proyectos </h2>
+          <div 
+            id="contenedor-proyectos" 
+            class="overflow-hidden h-full grid grid-cols-6 p-5 gap-1">
           </div>
-          <button
-            class="w-full flex justify-center bg-blue-600 rounded-2xl p-2.5 text-2xl text-white font-semibold italic 
-            cursor-pointer transition-transform duration-300 hover:scale-103 dark:bg-slate-800 active:bg-blue-700 dark:active:bg-slate-900"
-          >
-            Ver Proyectos
-          </button>
+          <h2 class="text-3xl font-semibold italic flex justify-center bg-blue-600 rounded-2xl p-1 dark:bg-gray-800"> Relevantes</h2>
         </div>
       </div>
     </main>
@@ -323,5 +300,3 @@
     </footer>
   </body>
 </html>
-
-
