@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiencia</title>
+    <script src="habilidades2.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen p-8 flex items-center justify-center">
+
+    <!-- Contenedor principal -->
+    <div class="card flex flex-col p-5 border border-blue-600 rounded-2xl gap-3 md:h-[300px] md:border-4 dark:border-slate-800 w-full max-w-5xl">
+      
+      <!-- Imágenes de tecnologías -->
+      <div id="contenedorImagenes" class="p-3 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 overflow-hidden h-full"></div>
+
+      <!-- Título de experiencia -->
+      <h2 class="text-3xl font-semibold italic flex justify-center bg-blue-600 text-white rounded-2xl p-2.5 dark:bg-slate-800">
+        HABILIDADES
+      </h2>
+      <button class="mt-2 self-center bg-blue-600 text-white font-semibold px-6 py-2 rounded-xl hover:bg-blue-700 transition-colors dark:bg-slate-800 dark:hover:bg-slate-700"
+      > <a href="./portafolio.html">Volver :D</a> </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div class="bg-white dark:bg-slate-900 p-6 rounded-lg w-80 text-center shadow-lg">
+        <img id="modalImagen" src="" alt="Tecnología" class="w-32 h-32 mx-auto rounded-2xl object-contain mb-4" />
+        <h2 id="modalTitulo" class="text-xl font-bold text-blue-600 dark:text-white"></h2>
+        <p id="modalDescripcionLarga" class="mt-2 text-gray-700 text-2xl dark:text-gray-300 font-semibold"></p>
+        <p id="modalDescripcion" class="mt-2 text-gray-700 text-2xl dark:text-gray-300 font-semibold"></p>
+        <button id="botonCerrarModal" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
