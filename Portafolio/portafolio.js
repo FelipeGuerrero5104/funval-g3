@@ -72,5 +72,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //FIN DARK MODE //
 
+// INICIO BOTON PARA DESCARGAR CV DESDE EL HEADER//
 
+document.addEventListener("DOMContentLoaded", () => {
+  const liDescarga = document.getElementById("descargarCV");
 
+  liDescarga.addEventListener("click", () => {
+  const CV = document.createElement("a");
+  CV.href = "./FelipeGuerrero.pdf";
+  CV.download = "FelipeGuerrero.pdf"
+  CV.click();
+  })
+}) 
+
+// FIN BOTON PARA DESCARGAR CV DESDE EL HEADER//
+
+// INICIO BOTON PARA DESCARGAR CV DESDE EL MAIN//
+
+document.addEventListener("DOMContentLoaded", () => {
+  const liDescarga2 = document.getElementById("descargarCV2");
+
+  liDescarga2.addEventListener("click", () => {
+  const CV2 = document.createElement("a");
+  CV2.href = "./FelipeGuerrero.pdf";
+  CV2.download = "FelipeGuerrero.pdf"
+  CV2.click();
+  })
+}) 
+
+// FIN BOTON PARA DESCARGAR CV DESDE EL MAIN//
