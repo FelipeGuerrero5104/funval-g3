@@ -1,7 +1,7 @@
 import { tecnologias } from "./habilidades.js";
 import { proyectos } from "./proyectos.js";
 
-//INICIO MODAL DE HABILIDADES//
+// INICIO MODAL DE HABILIDADES //
 const contenedor = document.getElementById("contenedorImagenes");
 
   tecnologias.forEach((tec, index) => {
@@ -31,10 +31,10 @@ const contenedor = document.getElementById("contenedorImagenes");
   function cerrarModal() {
     document.getElementById("modal").classList.add("hidden");
   }
-//FIN MODAL DE HABILIDADES//
+// FIN MODAL DE HABILIDADES //
 
 
-//INICIO CONTENEDOR PROYECTOS//
+// INICIO CONTENEDOR PROYECTOS //
 
 const contenedorProyectos = document.getElementById("contenedor-proyectos");
 
@@ -52,10 +52,9 @@ proyectos.forEach(({ src, alt, enlace }) => {
   a.appendChild(img);
   contenedorProyectos.appendChild(a);
 });
+// FIN CONTENEDOR PROYECTOS //
 
-//FIN CONTENEDOR PROYECTOS//
-
-//INICIO DARK MODE//
+// INICIO DARK MODE //
 const btn = document.getElementById("botoncito");
       btn.addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
@@ -69,11 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNav.classList.toggle("hidden");
   });
 });
+// FIN DARK MODE //
 
-//FIN DARK MODE //
 
-// INICIO BOTON PARA DESCARGAR CV DESDE EL HEADER//
-
+// INICIO BOTON PARA DESCARGAR CV DESDE EL HEADER //
 document.addEventListener("DOMContentLoaded", () => {
   const liDescarga = document.getElementById("descargarCV");
 
@@ -84,11 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
   CV.click();
   })
 }) 
+// FIN BOTON PARA DESCARGAR CV DESDE EL HEADER //
 
-// FIN BOTON PARA DESCARGAR CV DESDE EL HEADER//
 
-// INICIO BOTON PARA DESCARGAR CV DESDE EL MAIN//
-
+// INICIO BOTON PARA DESCARGAR CV DESDE EL MAIN //
 document.addEventListener("DOMContentLoaded", () => {
   const liDescarga2 = document.getElementById("descargarCV2");
 
@@ -99,5 +96,46 @@ document.addEventListener("DOMContentLoaded", () => {
   CV2.click();
   })
 }) 
+// FIN BOTON PARA DESCARGAR CV DESDE EL MAIN //
 
-// FIN BOTON PARA DESCARGAR CV DESDE EL MAIN//
+
+//INICIO REDIRECCION A LOS PROYECTOS DESDE EL HEADER //
+document.addEventListener("DOMContentLoaded", () => {
+  const liProyectos = document.getElementById("paginaProyectos1");
+
+  liProyectos.addEventListener("click", () => {
+  location.href = "../index.html";
+  })
+})
+// FIN REDIRECCION A LOS PROYECTOS DESDE EL HEADER //
+
+
+//INICIO REDIRECCION A LOS PROYECTOS DESDE EL MAIN //
+document.addEventListener("DOMContentLoaded", () => {
+  const liProyectos2 = document.getElementById("paginaProyectos2");
+
+  liProyectos2.addEventListener("click", () => {
+  location.href = "../index.html";
+  })
+})
+// FIN REDIRECCION A LOS PROYECTOS DESDE EL MAIN //
+
+//INICIO REDIRECCION PRINCIPAL DESDE EL HEADER //
+document.addEventListener("DOMContentLoaded", () => {
+  const redireccion1 = document.getElementById("recargarPagina1");
+
+  redireccion1.addEventListener("click", () => {
+  location.href = "./portafolio.html";
+  })
+})
+// FIN REDIRECCION PRINCIPAL DESDE EL HEADER //
+
+//INICIO REDIRECCION PRINCIPAL DESDE EL MAIN //
+document.addEventListener("DOMContentLoaded", () => {
+  const redireccion2 = document.getElementById("recargarPagina2");
+
+  redireccion2.addEventListener("click", () => {
+  location.href = "./portafolio.html";
+  })
+})
+// FIN REDIRECCION PRINCIPAL DESDE EL MAIN //
