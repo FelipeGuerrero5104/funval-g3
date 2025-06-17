@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="w-full min-h-screen bg-cyan-950 flex items-center justify-center">
+    <div id="padre" class=" text-white grid items-center justify-center">
+
+        <div id="arriba" class="flex items-center justify-center gap-11 mt-7 ">
+            <div class="flex  px-6 gap-2 items-center"> 
+                <div class="text-2xl text-sky-400 font-bold">X</div>
+                <div class="text-3xl text-amber-400 font-bold">O</div>
+            </div>
+            <div id="turno" class=" rounded-xl px-10 py-2 mr-12 bg-cyan-900 text-gray-300 font-bold ">X turn</div>
+            <div id="reinicio" class="border rounded-lg p-1 mr-5 bg-gray-500 text-black hover:bg-gray-600 active:bg-gray-700 cursor-pointer transition-transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke-width="1.5" 
+                     stroke="currentColor" 
+                     class="size-6">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+
+            </div>
+        </div>
+
+        <div id="cajas"
+             class="grid grid-cols-3 p-5 gap-5 " >
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div>
+            <div  class="rounded-xl w-24 h-24 flex items-center justify-center bg-cyan-900 shadow-[0_4px_0_0_#10212A] hover:bg-cyan-800 transition-transform hover:scale-110 text-4xl font-bold select-none cursor-pointer"></div> 
+        </div>
+        <div id="puntajes" class=" grid grid-cols-3 ml-1 gap-5 p-3 ">
+            <div id="jugadorX" class=" rounded-xl p-2 flex flex-col justify-center items-center bg-sky-400 text-black">
+                <div id="xjugador" class="font-semibold">X(TU)</div>
+                <div id="marcadorX" class="font-bold">0</div> 
+            </div>
+            <div id="empates" class=" rounded-xl p-2 flex flex-col justify-center items-center bg-gray-300 text-black">
+                <div id="empateMini" class="font-semibold">Empates</div>
+                <div id="empateMarcador" class="font-bold">0</div>
+            </div>
+            <div id="jugadorO" class="border rounded-xl p-2 flex flex-col justify-center items-center mr-1 bg-amber-400 text-black">
+                <div id="ojugador" class="font-semibold">O(CPU)</div>
+                <div id="marcadorO" class="font-bold">0</div>
+            </div>
+        </div>
+
+        <div
+          id="modalInicio"
+          class="hidden fixed inset-0 bg-cyan-950  flex flex-col items-center justify-center z-50">
+          <div class="flex mb-3 px-6 gap-2 items-center"> 
+                <div class="text-2xl text-sky-400 font-bold">X</div>
+                <div class="text-3xl text-amber-400 font-bold">O</div>
+          </div>
+          <div class="bg-cyan-900 dark:bg-slate-900  p-6 rounded-lg w-80 text-center shadow-lg">
+            <h1 id="modalDescripcion" class="mb-3 text-gray-400 text-3xl  font-semibold">Escoge tu simbolo</h1>
+            <div id="escogerSimbolo" class="bg-cyan-950 grid grid-cols-2 p-2 rounded-xl">
+                <button
+                    id="empezarX"
+                    class="  hover:bg-gray-700 text-white px-4 py-2 rounded active:bg-gray-800">
+                         X
+                </button>
+                <button
+                     id="empezarO"
+                    class=" hover:bg-gray-700 text-white px-4 py-2 rounded active:bg-gray-800">
+                         O
+                </button>
+            </div>
+            <h2 id="modalDescripcion2" class="mt-2 text-gray-400   font-semibold">Recuerda que X va primero</h2>
+            
+          </div>
+          <div id="juegoCpu" class="w-[320px] bg-amber-400 p-2 rounded-xl mt-5 mb-3 flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.3)] cursor-pointer hover:bg-amber-500 active:bg-amber-600 text-black font-semibold" >Nuevo Juego (VS CPU)</div>
+          <div id="JuegoPlayer" class="w-[320px] bg-sky-400 p-2 rounded-xl flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.3)] cursor-pointer hover:bg-sky-500 active:bg-sky-600 text-black font-semibold" >Nuevo Juego (VS PLAYER)</div>
+        </div>
+
+
+
+        <div
+          id="modalGanador"
+          class="hidden fixed inset-0 bg-black/50  flex items-center justify-center z-50"
+        >
+          <div class="bg-cyan-950 dark:bg-slate-900  p-6 rounded-lg w-80 text-center shadow-lg">
+            <p id="tuGanas" class="mt-2 text-gray-400   font-semibold">Tu ganas</p>
+            <h2 id="ganadorRonda" class="text-3xl font-bold text-sky-400 ">X gana la Ronda</h2>
+            <button
+              id="botonCerrarModal"
+              class="mt-4 bg-gray-500 hover:bg-gray-700 text-white px-4 py-2 rounded active:bg-gray-800">
+              Cerrar
+            </button>
+            <button
+              id="siguienteRonda"
+              class="mt-4 bg-amber-400 hover:bg-amber-500 text-white px-4 py-2 rounded active:bg-amber-600">
+              Siguiente Ronda
+            </button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

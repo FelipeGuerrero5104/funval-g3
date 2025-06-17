@@ -37,7 +37,7 @@ const productosConDescuento = productos.map(producto => ({
   precioConDescuento: producto.precio * 0.9
 }));
 
-console.log(productosConDescuento);
+console.log("aplicando descuentos", productosConDescuento);
 
 
 /* Crea un array con los productos cuyo precio sea menor a $100. */
@@ -45,23 +45,23 @@ console.log(productosConDescuento);
 
 let productosBaratos = productos.filter(est => est.precio < 100);
 
-console.log(productosBaratos);
+console.log("productos menores de 100", productosBaratos);
 
 
 /* Muestra los primeros 2 productos de la lista */
 
-console.log(productos.slice(0, 2));
+console.log("primeros dos productos de la lista", productos.slice(0, 2));
 
 /* Investiga cómo funciona el método sort en JavaScript y úsalo para ordenar los productos de menor a mayor precio. */
 
 productos.sort((a,b) => a.precio - b.precio )
-console.log(productos)
+console.log("productos ordenados",productos)
 
 
 /* Investiga cómo funciona el método reverse en JavaScript y utilízalo para mostrar los productos en orden inverso. */
 
 const productosInvertidos = productos.slice().reverse();
-console.log(productosInvertidos);        /* ESTE ULTIMO ES UNA COPIA DEL ARRAY SIN MODIFICAR EL ORIGINAL HECHO POR FELIPE GUERRERO :V */
+console.log("productos a la inversa",productosInvertidos);        /* ESTE ULTIMO ES UNA COPIA DEL ARRAY SIN MODIFICAR EL ORIGINAL HECHO POR FELIPE GUERRERO :V */
 
 // PARA HACER QUE EL ARRAY ORIGINAL SE INVIERTA DESCOMENTAR LAS LINEAS DE ABAJO Y COMENTAR LAS DE ARRIBA( LA COPIA) CONSIDERANDO QUE EN ESTE PUNTO ESTAN ORDENADAS POR PRECIO
 
