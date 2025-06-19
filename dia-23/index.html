@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex bg-blue-900 text-white justify-center items-center gap-11 py-8 relative"
+    >
+      <h1 class="text-4xl">petshop el buen mordisco</h1>
+      <img
+        src="https://images.dog.ceo/breeds/spaniel-cocker/IMG_20181221_161745_654.jpg"
+        alt=""
+        class="size-20 rounded-full absolute left-[92%]"
+      />
+    </header>
+    <main class="flex flex-col items-center justify-center p-8 gap-4">
+      <div id="search" class="w-[50%]">
+        <div class="relative w-full">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar..."
+            class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <div
+            id="dropdown"
+            class="absolute w-full bg-white border border-t-0 border-gray-300 rounded-b-md shadow-lg mt-1 z-50 hidden"
+          ></div>
+        </div>
+      </div>
+      <div id="contenedor" class="grid grid-cols-5 gap-4"></div>
+    </main>
+  </body>
+</html>

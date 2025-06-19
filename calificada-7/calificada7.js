@@ -13,8 +13,8 @@ const productos = [
 
   /* Recorre el array de productos y muestra en la consola el nombre y el precio de cada uno con forEach */
 
-productos.forEach(function(producto) {
-    console.log( producto);
+productos.forEach(function(productos) {
+    console.log( productos);
 })
 
 
@@ -37,7 +37,7 @@ const productosConDescuento = productos.map(producto => ({
   precioConDescuento: producto.precio * 0.9
 }));
 
-console.log("aplicando descuentos", productosConDescuento);
+console.log("aplicando descuentos del 10%", productosConDescuento);
 
 
 /* Crea un array con los productos cuyo precio sea menor a $100. */
