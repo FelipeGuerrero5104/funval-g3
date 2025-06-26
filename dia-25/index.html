@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+    <style>
+      @keyframes bump {
+        0% {
+          transform: translateY(0) scale(1);
+        }
+        30% {
+          transform: translateY(-6px) scale(1.05);
+        }
+        100% {
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .card:hover {
+        animation: bump 300ms ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex justify-around bg-black p-4 text-white items-center relative"
+    >
+      <div id="logo">
+        <img
+          src="./fotos/portal.gif"
+          alt=""
+          class="size-20 rounded-full object-cover"
+        />
+      </div>
+      <div>
+        <img
+          src="./fotos/Rick-and-Morty.png"
+          alt=""
+          class="h-28 w-72"
+        />
+      </div>
+      <div>
+        <div id="boton-drop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-11"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 absolute right-5 md:right-52"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownDefaultButton"
+            id="listado-clases"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Earnings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main
+      class="bg-slate-200 md:px-20 md:py-10 min-h-screen bg-center bg-cover bg-no-repeat"
+      style="background-image: url(./fotos/universo.gif);">
+      <div id="hero-section">
+
+      </div>
+      <div
+        id="contenedor-cards"
+        class="grid grid-cols-1 gap-6 p-8 bg-white rounded-2xl md:grid-cols-4"
+      >
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between mt-4">
+        <button id="ant" class="bg-red-500 p-4 rounded-2xl text-white">
+          anterior
+        </button>
+        <button id="sig" class="bg-blue-600 p-4 rounded-2xl text-white">
+          siguiente
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
